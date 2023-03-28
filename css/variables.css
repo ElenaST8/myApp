@@ -1,0 +1,95 @@
+.grid {
+  margin: 0 auto;
+  width: 500px;
+  display: grid;
+  grid-template-columns: repeat(4, 100px);
+  grid-auto-rows: 100px;
+  gap: 40px;
+}
+.grid div {
+  border-radius: 50%;
+}
+.grid .prime-1 {
+  background-color: #03a9f4;
+}
+.grid .prime-2 {
+  background-color: #f75e2e;
+}
+.grid .prime-3 {
+  background-color: #ecfa4d;
+}
+.grid .prime-4 {
+  background-color: #656a70;
+}
+.grid .pr-1-light-1 {
+  background-color: #68cbf8;
+}
+.grid .pr-1-light-2 {
+  background-color: #c0eafc;
+}
+.grid .pr-1-light-3 {
+  background-color: #e6f6fe;
+}
+.grid .pr-1-dark-1 {
+  background-color: #0287c3;
+}
+.grid .pr-1-dark-2 {
+  background-color: #02557a;
+}
+.grid .pr-1-dark-3 {
+  background-color: #013349;
+}
+.grid .pr-2-light-1 {
+  background-color: #fa9e82;
+}
+.grid .pr-2-light-2 {
+  background-color: #fdd7cb;
+}
+.grid .pr-2-light-3 {
+  background-color: #feefea;
+}
+.grid .pr-2-dark-1 {
+  background-color: #94381c;
+}
+.grid .pr-2-dark-2 {
+  background-color: #3e180c;
+}
+.grid .pr-2-dark-3 {
+  background-color: #190905;
+}
+.grid .pr-3-light-1 {
+  background-color: #f4fc94;
+}
+.grid .pr-3-light-2 {
+  background-color: #fafed3;
+}
+.grid .pr-3-light-3 {
+  background-color: #fdffed;
+}
+.grid .pr-3-dark-1 {
+  background-color: #8e962e;
+}
+.grid .pr-3-dark-2 {
+  background-color: #3b3f13;
+}
+.grid .pr-3-dark-3 {
+  background-color: #181908;
+}
+.grid .pr-4-light-1 {
+  background-color: #a3a6a9;
+}
+.grid .pr-4-light-2 {
+  background-color: #d9dadb;
+}
+.grid .pr-4-light-3 {
+  background-color: #f0f0f1;
+}
+.grid .pr-4-dark-1 {
+  background-color: #3d4043;
+}
+.grid .pr-4-dark-2 {
+  background-color: #191b1c;
+}
+.grid .pr-4-dark-3 {
+  background-color: #0a0b0b;
+}

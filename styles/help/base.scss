@@ -1,0 +1,68 @@
+h1:hover,
+h2:hover,
+h3:hover,
+h4:hover,
+h5:hover,
+h6:hover {
+  @extend .hover;
+}
+
+h1 {
+  @include heading("font-Poppins-SemiBold", 35px, $pr-4-dark-3);
+}
+
+h2 {
+  @include heading("font-Poppins-Medium", 33px, $pr-4-dark-3);
+}
+h3 {
+  @include heading("font-Poppins-Medium", 27px, $pr-4-dark-3);
+}
+
+h4 {
+  @include heading("font-Poppins-Medium", 22px, $pr-4-dark-3);
+}
+
+h5 {
+  @include heading("font-Poppins-Medium", 17px, $pr-4-dark-3);
+}
+h6 {
+  @include heading("font-Poppins-Medium", 15px, $pr-4-dark-3);
+}
+
+.subtitle {
+  @include heading("font-Poppins-Regular", 14px, $pr-4-dark-1);
+}
+
+.paragraphs {
+  width: 573px;
+}
+
+.block-1 {
+  display: flex;
+  gap: 250px;
+}
+
+.list {
+  @include heading("font-Poppins-Medium", 15px, $pr-4-dark-1, 0);
+}
+
+.list li {
+  list-style-image: url(../../img/6326564.png);
+  line-height: 35px;
+}
+
+// .subtitle:hover {
+//   @extend .hover;
+//   font-style: italic;
+//   font-family: "font-Poppins-Regular";
+//   color: $pr-4-dark-1;
+//   border: none;
+// }
+
+// .form-select {
+//   background-image: none;
+// }
+
+// .btn-solid:disabled {
+//   background-color: tomato;
+// }

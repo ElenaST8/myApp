@@ -1,0 +1,15 @@
+@mixin heading($font, $size, $text: $prime-1, $padding: 10px) {
+  font-family: $font;
+  font-size: $size;
+  color: $text;
+  padding: $padding;
+}
+
+.hover {
+  color: #fff;
+  background-color: $prime-1;
+  cursor: pointer;
+}
+
+.list {
+}
