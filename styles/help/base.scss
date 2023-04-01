@@ -9,60 +9,484 @@ h6:hover {
 
 h1 {
   @include heading("font-Poppins-SemiBold", 35px, $pr-4-dark-3);
+  margin-top: 35px;
 }
 
 h2 {
-  @include heading("font-Poppins-Medium", 33px, $pr-4-dark-3);
+  @include heading($base_font, 33px, $pr-4-dark-3);
 }
 h3 {
-  @include heading("font-Poppins-Medium", 27px, $pr-4-dark-3);
+  @include heading($base_font, 27px, $pr-4-dark-3);
 }
 
 h4 {
-  @include heading("font-Poppins-Medium", 22px, $pr-4-dark-3);
+  @include heading($base_font, 22px, $pr-4-dark-3);
 }
 
 h5 {
-  @include heading("font-Poppins-Medium", 17px, $pr-4-dark-3);
+  @include heading($base_font, 17px, $pr-4-dark-3);
 }
 h6 {
-  @include heading("font-Poppins-Medium", 15px, $pr-4-dark-3);
+  @include heading($base_font, 15px, $pr-4-dark-3);
 }
 
 .subtitle {
-  @include heading("font-Poppins-Regular", 14px, $pr-4-dark-1);
+  @include heading($font-regular, 14px, $pr-4-dark-1);
+}
+
+.list {
+  @include heading($base_font, 15px, $pr-4-dark-1, 0);
+}
+
+.subtitle-2 {
+  @include heading($base_font, 20px, $pr-4-dark-1);
+  width: 699px;
+  margin-bottom: 0;
+}
+
+.subtitle-3 {
+  @include heading($font-regular, 17px, $pr-1-dark-1, 0);
+  padding: 16px 55px 13px 34px;
+  border-left: 1px solid $prime-1;
+  background-color: $pr-1-light-3;
+  margin-top: 6px;
+  margin-right: 42px;
+  width: 706px;
 }
 
 .paragraphs {
   width: 573px;
 }
 
-.block-1 {
-  display: flex;
-  gap: 250px;
+.subtitle-2:hover {
+  @extend .hover;
+  padding: 15px 30px 15px 16px;
+  border: none;
 }
 
-.list {
-  @include heading("font-Poppins-Medium", 15px, $pr-4-dark-1, 0);
+.block-1,
+.block-2 {
+  display: flex;
+}
+
+.block-1 {
+  gap: 220px;
+}
+
+.block-2 {
+  gap: 92px;
 }
 
 .list li {
-  list-style-image: url(../../img/6326564.png);
+  // list-style-image: url(../../img/6326564.png);
+  list-style-type: disc;
   line-height: 35px;
+  position: relative;
 }
 
-// .subtitle:hover {
-//   @extend .hover;
-//   font-style: italic;
-//   font-family: "font-Poppins-Regular";
-//   color: $pr-4-dark-1;
-//   border: none;
-// }
+li::marker {
+  color: $prime-1;
+  font-size: 40px;
+}
 
-// .form-select {
-//   background-image: none;
-// }
+ul li::before {
+  content: "\2714";
+  color: $white;
+  position: absolute;
+  top: -2px;
+  left: -32px;
+  font-size: 10px;
+}
 
-// .btn-solid:disabled {
-//   background-color: tomato;
-// }
+.elements {
+  width: 1040px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+.form-control-lg,
+.form-select {
+  @include heading($font-regular, 17px, $pr-4-dark-2, 0);
+  padding-left: 21px;
+  border: 2px solid $pr-4-light-2;
+  width: 319px;
+  height: 50px;
+  background-color: $pr-4-light-3;
+}
+
+.form-control-lg:hover,
+.form-select:hover {
+  background-color: $white;
+}
+
+.input {
+  display: flex;
+  gap: 40px;
+  margin: 110px 15px 65px 15px;
+  position: relative;
+}
+
+.dropdown {
+  background-image: url(../../img/arrow-icon.png);
+}
+
+.numberpg {
+  background-image: none;
+  text-align: center;
+}
+
+.quantity_inner {
+  display: flex;
+}
+
+.quantity {
+  width: 260px;
+  height: 46px;
+  text-align: center;
+  background-color: $pr-4-light-3;
+  border: 1px solid $pr-4-light-2;
+}
+
+.bt_minus,
+.bt_plus {
+  width: 50px;
+  height: 46px;
+  background-color: $white;
+  border: 1px solid $pr-4-light-2;
+  border-radius: 1px;
+}
+
+.bt_minus {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.bt_plus {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+.input p {
+  @include heading($base_font, 15px, $text_p, 0);
+  margin-bottom: 10px;
+}
+
+.input p:hover {
+  @extend .hover;
+}
+
+.varied-first,
+.varied-second {
+  background-color: $white;
+}
+
+.varied-first {
+  border: 1px solid $prime-5;
+  color: $prime-5;
+  background-image: url(../../img/galochka.jpg);
+}
+
+.varied-second {
+  border: 1px solid $prime-2;
+  color: $prime-2;
+  background-image: url(../../img/false\ icon.png);
+}
+
+.form-check-label {
+  font-size: 14px;
+  font-family: $font-regular;
+  color: $pr-4-light-1;
+}
+
+.form-check-label:hover {
+  color: $pr-4-dark-1;
+}
+
+/*checkboxes*/
+
+.checkboxes {
+  width: 585px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-row-gap: 25px;
+  margin-bottom: 120px;
+  margin-left: 15px;
+}
+
+.form-check-input:hover {
+  border: 3px solid $prime-1;
+}
+
+.form-check-input:disabled {
+  background-color: $pr-4-light-1;
+  border-color: $pr-4-light-3;
+}
+
+/*buttons*/
+
+.buttons {
+  width: 1245px;
+  grid-template-columns: 220px 280px 200px 220px 200px;
+  margin-bottom: 60px;
+}
+
+.buttons,
+.buttons_mini {
+  display: grid;
+  grid-column-gap: 30px;
+  grid-row-gap: 20px;
+  margin-left: 15px;
+}
+
+.buttons_mini {
+  width: 890px;
+  grid-template-columns: 150px 170px repeat(3, 150px);
+  margin-bottom: 162px;
+}
+
+.buttons .btn-primary {
+  font-size: 14px;
+  height: 50px;
+}
+
+.buttons_mini .btn-primary {
+  font-size: 12px;
+  height: 40px;
+}
+
+.buttons .btn-primary,
+.buttons_mini .btn-primary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $pr-1-dark-1;
+  border: none;
+  opacity: 1;
+}
+
+.btn-primary:nth-of-type(1) {
+  @include buttons($font-semibold, $prime-2);
+  border: none;
+}
+
+.btn-primary:nth-of-type(2),
+.btn-primary:nth-of-type(3) {
+  @include buttons($base_font, $pr-1-dark-1);
+  border: none;
+}
+
+.btn-primary:nth-of-type(4) {
+  @include buttons($font-semibold, $white);
+  border: 1px solid $prime-2;
+  color: $prime-2;
+}
+
+.btn-primary:nth-of-type(5) {
+  @include buttons($base_font, $white);
+  border: 1px solid $pr-1-dark-1;
+  color: $pr-1-dark-1;
+}
+
+.btn-primary.disabled {
+  @include buttons($font-semibold, $pr-4-light-2);
+  border: none;
+  color: $white !important;
+}
+
+.buttons .btn-primary:hover,
+.buttons_mini .btn-primary:hover {
+  @extend.hoverbuttons;
+}
+
+.buttons .btn-primary:nth-child(9):hover,
+.buttons_mini .btn-primary:nth-child(9):hover {
+  background-color: $prime-2;
+}
+
+.buttons .btn-primary:nth-child(10):hover,
+.buttons_mini .btn-primary:nth-child(10):hover {
+  background-color: $pr-1-dark-1;
+}
+
+/*tabs*/
+
+.tabs {
+  width: 672px;
+}
+
+.tabs p {
+  margin: 20px auto 150px 15px;
+  font-family: $font-regular;
+  font-size: 13px;
+}
+
+.justify-content-center {
+  justify-content: start !important;
+  margin-left: 15px;
+  border-bottom: 1px solid #cccccc;
+}
+
+.nav-link {
+  font-size: 14px;
+  font-family: $font-regular;
+  color: $pr-4-light-2;
+}
+
+.nav-link:hover {
+  color: $prime-2;
+  border-bottom: 2px solid $prime-2;
+}
+
+/*misk element*/
+
+.misk-elements {
+  width: 605px;
+  margin-left: 15px;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 150px;
+}
+
+.pagination .page-item {
+  --bs-pagination-border-color: none;
+  --bs-pagination-color: $pr-4-light-3;
+  --bs-pagination-font-size: 13px;
+  --bs-pagination-font-family: $base_font;
+}
+
+.misk-elements ul li {
+  margin-right: 10px;
+}
+
+.page-link:hover {
+  color: $white;
+  text-decoration: none;
+  background-color: $prime-1;
+  border-color: none;
+  border-radius: 50%;
+}
+
+.hidden:hover {
+  color: $pr-4-light-1;
+  background-color: $white;
+}
+
+/*dotted-pagination*/
+
+.dotted-pagination {
+  width: 112px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 6px;
+}
+
+.d1 {
+  width: 10px;
+  height: 10px;
+  background: $pr-4-light-1;
+  border-radius: 50%;
+  margin-bottom: 0;
+  margin-top: 9px;
+}
+
+.d1:hover {
+  background: $white;
+  border: 2px solid $prime-1;
+}
+
+/*block-3*/
+
+.textinput {
+  width: 416px;
+  height: 173px;
+  padding: 27px 27px 26px 22px;
+  margin: 20px 3px 140px 15px;
+  font-family: $font-light;
+  color: $pr-4-light-1;
+  font-size: 13px;
+  line-height: 1.5;
+  border-color: $pr-4-light-2;
+}
+
+.block-3 {
+  width: 940px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.icon {
+  margin-top: 10px;
+  font-size: 15px;
+  color: $pr-4-light-1;
+}
+
+.icon .fa-facebook-f {
+  color: $pr-1-dark-3;
+}
+
+.icon .fa-twitter {
+  color: $pr-1-light-1;
+}
+
+.icon .fa-pinterest-p {
+  color: $prime-6;
+}
+
+.icon .fa-google-plus-g {
+  color: $prime-2;
+}
+
+.icon .nonactive {
+  color: $pr-4-light-1;
+}
+
+.icon {
+  margin-top: 32px;
+  gap: 25px;
+}
+
+i {
+  font-size: 15px;
+}
+
+.icon,
+.icon-block {
+  height: 70px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  // gap: 25px;
+}
+
+.icon-block {
+  background-color: $prime-1;
+  padding: 16px 16px 115px 16px;
+  gap: 10px;
+}
+
+.icon-block i {
+  color: $white;
+  text-align: center;
+}
+
+.icon-block p {
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 33px;
+  height: 33px;
+  border-radius: 50%;
+  border: 1px solid $white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.fa-brands {
+  line-height: 0;
+}
+
+.icon-block .dark {
+  background-color: $pr-1-dark-1;
+  border: none;
+}

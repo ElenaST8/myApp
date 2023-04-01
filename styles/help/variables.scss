@@ -2,6 +2,8 @@ $prime-1: #03a9f4;
 $prime-2: #f75e2e;
 $prime-3: #ecfa4d;
 $prime-4: #656a70;
+$prime-5: #09a912;
+$prime-6: #f44747;
 
 //light
 $pr-1-light-1: mix(#fff, $prime-1, 40%);
@@ -39,6 +41,14 @@ $pr-4-dark-3: mix(#000, $prime-4, 90%);
 
 $text_head: mix(#000, $prime-1, 70%);
 $text_p: mix(#000, $prime-1, 20%);
+
+$base_font: "font-Poppins-Medium";
+$font-regular: "font-Poppins-Regular";
+$font-semibold: "font-Poppins-SemiBold";
+$font-light: "font-Poppins-Light";
+$white: #fff;
+
+$text_p: mix(#fff, $prime-4, 20%);
 
 .grid {
   margin: 0 auto;

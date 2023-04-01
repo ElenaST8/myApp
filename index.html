@@ -8,7 +8,13 @@
     integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-rbsA2VBKQhggwzxH7pPCaAqO46MgnOM80zW1RWuH61DGLwZJEdK2Kadq2F9CUG65" crossorigin="anonymous">
+
+
+
   <title>Vite App</title>
+  <link rel="stylesheet" href="css/all.css">
   <link rel="stylesheet" href="/styles/main.scss">
 </head>
 
@@ -85,45 +91,321 @@
       </ul>
     </div>
   </div>
-  <!-- <div>
-      <p>
+  <div class="block-2">
+    <div>
+      <p class="subtitle-2">
         By utilizing elements and principles of Material Design, we were able to create a framework that incorporates
       </p>
-      <p>
+      <p class="subtitle-2">
         By utilizing elements and principles of Material Design, we were able to create a framework that incorporates
       </p>
     </div>
     <div>
-      <p>Quotation</p>
-      <p>
+      <p class="subtitle-3">
         On the other hand, we denounce with righteous indignation and dislike men who are so beguiled and demoralized by
         the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the pain and
       </p>
     </div>
   </div>
-  <select name="" id="">
-    <option value="">test1</option>
-    <option value="">test1</option>
-    <option value="">test1</option>
-    <option value="">test1</option>
-    <option value="">test1</option>
-  </select>
-  <select name="form-select" aria-label="Default select example">
-    <option selected>Open this select menu</option>
-    <option value="1">One</option>
-    <option value="2">Two</option>
-    <option value="3">Three</option>
-  </select> -->
+  <div class="input">
+    <div class="elements">
+      <div>
+        <p> Normal </p>
+        <select class="form-control form-control-lg">
+          <option>Placeholder text</option>
+        </select>
+      </div>
+      <div>
+        <p> Hover </p>
+        <select class="form-control form-control-lg">
+          <option>Placeholder text</option>
+        </select>
+      </div>
+      <div>
+        <p> Active </p>
+        <select class="form-control form-control-lg">
+          <option>Placeholder text</option>
+        </select>
+      </div>
+      <div>
+        <p>Dropdown normal</p>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Placeholder text</option>
+          <option value="1">Here's an option</option>
+          <option value="2">Another option1</option>
+          <option value="3">Another option2</option>
+          <option value="2">Another option3</option>
+          <option value="3">Another option4</option>
+        </select>
+      </div>
+      <div>
+        <p>Dropdown hover</p>
+        <select class="form-select" aria-label="Default select example">
+          <option selected>Placeholder text</option>
+          <option value="1">Here's an option</option>
+          <option value="2">Another option1</option>
+          <option value="3">Another option2</option>
+          <option value="2">Another option3</option>
+          <option value="3">Another option4</option>
+        </select>
+      </div>
+      <div>
+        <p>Dropdown active</p>
+        <select class="form-select dropdown" aria-label="Default select example">
+          <option selected>Placeholder text</option>
+          <option value="1">Here's an option</option>
+          <option value="2">Another option1</option>
+          <option value="3">Another option2</option>
+          <option value="2">Another option3</option>
+          <option value="3">Another option4</option>
+        </select>
+      </div>
+      <div>
+        <p> Normal </p>
+        <select class="form-select varied-first" aria-label="Default select example">
+          <option> Success</option>
+        </select>
+      </div>
+      <div>
+        <p> Normal </p>
+        <select class="form-select varied-second" aria-label="Default select example">
+          <option>An error has ocured</option>
+        </select>
+      </div>
+    </div>
+    <div>
+      <p>Number of pages</p>
+      <div class="quantity_inner">
+        <button class="bt_minus">-</button>
+        <input type="text" class="quantity" value="1" data-max-count="7">
+        <button class="bt_plus">+</button>
+      </div>
+    </div>
+  </div>
+  <div class="checkboxes">
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+      <label class="form-check-label" for="inlineCheckbox1">Normal</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+      <label class="form-check-label" for="inlineCheckbox2">Hover</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+      <label class="form-check-label" for="inlineCheckbox2">Selected</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="checkbox" value="" id="flexCheckCheckedDisabled" checked disabled>
+      <label class="form-check-label" for="flexCheckCheckedDisabled">
+        Disabled
+      </label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Normal</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio1" value="option1">
+      <label class="form-check-label" for="inlineRadio1">Hover</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input" type="radio" name="inlineRadioOptions" id="inlineRadio2" value="option2">
+      <label class="form-check-label" for="inlineRadio2">Selected</label>
+    </div>
+    <div class="form-check form-check-inline">
+      <input class="form-check-input disabled" type="radio" name="flexRadioDisabled" id="flexRadioCheckedDisabled"
+        checked disabled>
+      <label class="form-check-label" for="flexRadioCheckedDisabled">
+        Disabled
+      </label>
+    </div>
+  </div>
+  <div class="buttons">
+    <button type="button" class="btn btn-primary" disabled>BTN1</button>
+    <button type="button" class="btn btn-primary" disabled>Btn2</button><button type="button" class="btn btn-primary"
+      disabled>Btn3</button>
+    <button type="button" class="btn btn-primary" disabled>BTN4</button>
+    <button type="button" class="btn btn-primary" disabled>Btn5</button>
+    <a href="#" class="btn btn-primary tomatocolor" role="button" data-bs-toggle="button">BTN1</a>
+    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Btn2</a>
+    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Btn3</a>
+    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">BTN4</a>
+    <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Btn5</a>
+    <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">BTN1</a>
+    <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Btn2</a>
+    <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Btn3</a>
+    <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">BTN4</a>
+    <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Btn5</a>
+  </div>
 
-  <!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-    integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+  <div class="buttons_mini">
+    <button type="button" class="btn btn-primary" disabled>BTN1</button><button type="button" class="btn btn-primary"
+      disabled>Button2<button type="button" class="btn btn-primary" disabled>Button3</button><button type="button"
+        class="btn btn-primary" disabled>Button4</button><button type="button" class="btn btn-primary"
+        disabled>Button5</button>
+      <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">BTN1</a>
+      <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Button2</a>
+      <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Button3</a>
+      <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Button4</a>
+      <a href="#" class="btn btn-primary" role="button" data-bs-toggle="button">Button5</a>
+      <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">BTN1</a>
+      <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Button2</a>
+      <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Button3</a>
+      <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Button4</a>
+      <a class="btn btn-primary disabled" aria-disabled="true" role="button" data-bs-toggle="button">Button5</a>
+  </div>
+
+  <div class="tabs">
+    <ul class="nav justify-content-center">
+      <li class="nav-item">
+        <a class="nav-link active" aria-current="page" href="#">Tabname1</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tabname2</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tabname3</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Tabname4</a>
+      </li>
+    </ul>
+    <p>Placeholder name</p>
+  </div>
+
+  <div class="misk-elements">
+    <div class="pagination-block">
+      <nav aria-label="Page navigation example">
+        <ul class="pagination">
+          <li class="page-item">
+            <a class="page-link hidden" href="#" aria-label="Previous">
+              <span aria-hidden="true">&#10094;</span>
+            </a>
+          </li>
+          <li class="page-item"><a class="page-link" href="#">1</a></li>
+          <li class="page-item"><a class="page-link" href="#">2</a></li>
+          <li class="page-item"><a class="page-link" href="#">3</a></li>
+          <li class="page-item"><a class="page-link" href="#">4</a></li>
+          <li class="page-item"><a class="page-link" href="#">5</a></li>
+          <li class="page-item"><a class="page-link" href="#">6</a></li>
+          <li class="page-item"><a class="page-link" href="#">7</a></li>
+          <li class="page-item"><a class="page-link" href="#">8</a></li>
+          <li class="page-item"><a class="page-link" href="#">9</a></li>
+          <li class="page-item">
+            <a class="page-link hidden" href="#" aria-label="Next">
+              <span aria-hidden="true">&#10095;</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="dotted-pagination">
+      <a href="#">
+        <p class="d1"></p>
+      </a>
+      <a href="#">
+        <p class="d1"></p>
+      </a>
+      <a href="#">
+        <p class="d1"></p>
+      </a>
+      <a href="#">
+        <p class="d1"></p>
+      </a>
+      <a href="#">
+        <p class="d1"></p>
+      </a>
+      <a href="#">
+        <p class="d1"></p>
+      </a>
+    </div>
+  </div>
+
+  <div class="block-3">
+    <textarea name="commit" class="textinput">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+  </textarea>
+    <div class="icon">
+      <i class="fa-brands fa-facebook-f nonactive"></i>
+      <i class="fa-brands fa-twitter nonactive"></i>
+      <i class="fa-brands fa-pinterest-p nonactive"></i>
+      <i class="fa-brands fa-google-plus-g nonactive"></i>
+      <i class="fa-brands fa-facebook-f"></i>
+      <i class="fa-brands fa-twitter"></i>
+      <i class="fa-brands fa-pinterest-p"></i>
+      <i class="fa-brands fa-google-plus-g"></i>
+    </div>
+    <div class="icon-block">
+      <p>
+        <i class="fa-brands fa-facebook-f"></i>
+      </p>
+      <p>
+        <i class="fa-brands fa-twitter"></i>
+      </p>
+      <p>
+        <i class="fa-brands fa-pinterest-p"></i>
+      </p>
+      <p>
+        <i class="fa-brands fa-google-plus-g"></i>
+      </p>
+      <p class="dark">
+        <i class="fa-brands fa-facebook-f"></i>
+      </p>
+      <p class="dark">
+        <i class="fa-brands fa-twitter"></i>
+      </p>
+      <p class="dark">
+        <i class="fa-brands fa-pinterest-p"></i>
+      </p>
+      <p class="dark">
+        <i class="fa-brands fa-google-plus-g"></i>
+      </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4"
     crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
-    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
-    crossorigin="anonymous"></script>
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
-    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
-    crossorigin="anonymous"></script> -->
+
+  <script>
+    // Зменшуємо к-сть по кліку
+    document.querySelectorAll('.quantity_inner .bt_minus').forEach(function (element) {
+      element.addEventListener('click', function (event) {
+        event.preventDefault();
+        let input = this.parentElement.querySelector('.quantity');
+        let count = parseInt(input.value) - 1;
+        count = count < 1 ? 1 : count;
+        input.value = count;
+      });
+    });
+
+    // Збільшуємо к-сть по кліку
+    document.querySelectorAll('.quantity_inner .bt_plus').forEach(function (element) {
+      element.addEventListener('click', function (event) {
+        event.preventDefault();
+        let input = this.parentElement.querySelector('.quantity');
+        let count = parseInt(input.value) + 1;
+        count = count > parseInt(input.dataset.maxCount) ? parseInt(input.dataset.maxCount) : count;
+        input.value = parseInt(count);
+      });
+    });
+
+    // Забираємо все зайве и неможливе при зміні поля
+    document.querySelectorAll('.quantity_inner .quantity').forEach(function (element) {
+      element.addEventListener("change", function (event) {
+        event.preventDefault();
+        if (this.value.match(/[^0-9]/g)) {
+          this.value = this.value.replace(/[^0-9]/g, '');
+        }
+        if (this.value == "") {
+          this.value = 1;
+        }
+        if (this.value > parseInt(this.dataset.maxCount)) {
+          this.value = parseInt(this.dataset.maxCount);
+        }
+      });
+    });
+  </script>
 
 </body>
 
